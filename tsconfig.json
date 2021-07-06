@@ -8,7 +8,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "jsx": "react",
-    "sourceMap": true
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true
   },
   "include": ["./src/**/*"]
 }
