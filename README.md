@@ -11,7 +11,7 @@ The project starts by setting up webpack
 
 ## Live Demo 
 
-- [Visit Page](link goes here)
+- [Visit Page]()
 
 ## Built With
 - React
@@ -35,7 +35,7 @@ The project starts by setting up webpack
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/abongsjoel/react-plus-typescript/issues).
 
 ## Show your support
 
