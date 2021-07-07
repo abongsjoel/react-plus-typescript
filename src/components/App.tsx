@@ -3,6 +3,7 @@ import pizzas from "../data/pizzas.json";
 import Pizza from "./Pizza";
 import AppCSS from "./App.module.css";
 import PizzaSVG from "../svg/pizza.svg";
+import Cart from "./Cart";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <div className={AppCSS.header}>
         <PizzaSVG width={120} height={120} />
         <div className={AppCSS.siteTitle}>Delicious Pizza</div>
+        <Cart />
       </div>
       <ul>
         {pizzas.map((pizza) => (
