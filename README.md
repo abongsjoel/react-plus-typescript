@@ -8,7 +8,9 @@
 The project starts by setting up webpack to work with Typescript and then adding react and react-dom to the mix.
 Typescript is setup using either ts-loader or babel-loader.
 
-Then, we setup css in webpack and then configure CSS Modules.
+Then, I setup css in webpack and then configure CSS Modules.
+
+Next, I set up a webpack loader for SVG files and describe .svg imports to Typescript
 
 
 
