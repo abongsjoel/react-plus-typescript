@@ -2,6 +2,7 @@ import React from "react";
 import pizzas from "../data/pizzas.json";
 import Pizza from "./Pizza";
 import AppCSS from "./App.module.css";
+import PizzaSVG from "../svg/pizza.svg";
 
 const App = () => {
   return (
