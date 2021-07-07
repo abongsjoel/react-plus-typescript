@@ -8,6 +8,8 @@
 The project starts by setting up webpack to work with Typescript and then adding react and react-dom to the mix.
 Typescript is setup using either ts-loader or babel-loader.
 
+Then, we setup css in webpack and then configure CSS Modules.
+
 
 
 ## Live Demo 
