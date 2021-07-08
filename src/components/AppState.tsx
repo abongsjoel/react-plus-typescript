@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from "react";
 
 interface AppStateValue {
   cart: {
-    items: { id: number; name: string; price: number }[];
+    items: { id: number; name: string; price: number; quantity: number }[];
   };
 }
 
