@@ -1,5 +1,4 @@
-import React, { createContext } from "react";
-import { useState } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 interface AppStateValue {
   cart: {
@@ -18,6 +17,16 @@ export const AppStateContext = createContext(defaultStateValue);
 export const AppSetStateContext = createContext<
   React.Dispatch<React.SetStateAction<AppStateValue>> | undefined
 >(undefined);
+
+export const useSetState = () => {
+  const setState = useContext(AppSetStateContext);
+  if (!setState) {
+    throw new Error(
+      "useSetState was called outside of the AppSetStateContext provider"
+    );
+  }
+  return setState;
+};
 
 const AppStateProvider: React.FC = ({ children }) => {
   const [state, setState] = useState(defaultStateValue);
