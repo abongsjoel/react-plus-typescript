@@ -23,7 +23,6 @@ class Cart extends React.Component<Props, State> {
 
   //We could also just use an array function instead of binding the this as above
   handleClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
-    console.log(e.target);
     this.setState((prevState) => ({ isOpen: !prevState.isOpen }));
   }
 

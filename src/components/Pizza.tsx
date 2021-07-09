@@ -17,6 +17,7 @@ interface Props {
 
 const Pizza: React.FC<Props> = ({ pizza }: Props) => {
   const setState = useSetState();
+
   const handleAddToCartClick = () => {
     setState((state) => {
       const itemExists = state.cart.items.find((item) => item.id === pizza.id);
@@ -34,9 +35,10 @@ const Pizza: React.FC<Props> = ({ pizza }: Props) => {
             : [
                 ...state.cart.items,
                 {
-                  id: pizza.id,
-                  name: pizza.name,
-                  price: pizza.price,
+                  // id: pizza.id,
+                  // name: pizza.name,
+                  // price: pizza.price,
+                  ...pizza,
                   quantity: 1,
                 },
               ],
@@ -49,10 +51,12 @@ const Pizza: React.FC<Props> = ({ pizza }: Props) => {
     <li className={PizzaCSS.container}>
       <h2>{pizza.name}</h2>
       <p>{pizza.description}</p>
-      <p>{pizza.price}</p>
-      <button type="button" onClick={handleAddToCartClick}>
-        Add to Cart
-      </button>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <p>{pizza.price}</p>
+        <button type="button" onClick={handleAddToCartClick}>
+          Add to Cart
+        </button>
+      </div>
     </li>
   );
 };
