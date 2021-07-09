@@ -11,6 +11,11 @@ interface State {
   isOpen: boolean;
 }
 
+/*
+ * The context API provides hooks for accessing the context value but we cannot
+ * use hooks in class components, so in class components, we can use renderProps API.
+ */
+
 //We can also extend PureCompenent, the implementatis is pretty the same.
 class Cart extends React.Component<Props, State> {
   constructor(props: Props) {
@@ -29,6 +34,7 @@ class Cart extends React.Component<Props, State> {
   render() {
     return (
       <AppStateContext.Consumer>
+        {/* This is the render props API i.e. () => {}*/}
         {(state) => {
           const itemsCount = state.cart.items.reduce((sum, item) => {
             return sum + item.quantity;

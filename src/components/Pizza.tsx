@@ -15,6 +15,9 @@ interface Props {
   pizza: Pizza;
 }
 
+/*
+ * This is a functional component, so we can use the context hooks API.
+ */
 const Pizza: React.FC<Props> = ({ pizza }: Props) => {
   const dispatch = useStateDispatch();
 

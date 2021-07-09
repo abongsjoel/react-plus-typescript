@@ -18,6 +18,8 @@ const defaultStateValue: AppStateValue = {
   },
 };
 
+//A context for sharing the state object
+//Keeps the value of the state, i.e. the state object
 export const AppStateContext = createContext(defaultStateValue);
 
 export const AppDispatchContext = createContext<
@@ -40,6 +42,7 @@ const reducer = (state: AppStateValue, action: AddToCartAction) => {
     const itemExists = state.cart.items.find(
       (item) => item.id === itemToAdd.id
     );
+
     return {
       ...state,
       cart: {
@@ -69,6 +72,8 @@ export const useStateDispatch = () => {
   return dispatch;
 };
 
+//Share state with our App (the component tree of our App)
+//Wrap our Apps component tree in the stateContextProvider component
 const AppStateProvider: React.FC = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, defaultStateValue);
 
