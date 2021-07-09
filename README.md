@@ -12,6 +12,10 @@ Then, I setup css in webpack and then configure CSS Modules.
 
 Next, I set up a webpack loader for SVG files and describe .svg imports to Typescript
 
+Then, I proceeded in creating functional as well as class based components coupled with looking at handling events using react.
+
+Next, i added React context and the useState hook and then went further to replace setState with useReducer
+
 
 
 ## Live Demo 
