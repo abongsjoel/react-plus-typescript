@@ -23,10 +23,10 @@ Next, i created a Higher Order Component (HOC) for sharing the state, and then a
 I also made use of the React Ref API to handle DOM events using the original DOM API.
 
 
-
+<!-- 
 ## Live Demo 
 
-- [Visit Page]()
+- [Visit Page]() -->
 
 ## Built With
 - Typescript
