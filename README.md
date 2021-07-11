@@ -3,7 +3,7 @@
 
 > A simple application built while extending my knowledge on Typescript
 
-<!-- ![screenshot](../features/screenshot.png) -->
+![screenshot](../features/screenshot.png)
 
 The project starts by setting up webpack to work with Typescript and then adding react and react-dom to the mix.
 Typescript is setup using either ts-loader or babel-loader.
