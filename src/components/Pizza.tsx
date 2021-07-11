@@ -1,31 +1,22 @@
 import React from "react";
 
-import { useStateDispatch } from "./AppState";
+import { Pizza } from "../types";
+import { useAddToCart } from "./AddToCart";
 
 import PizzaCSS from "./Pizza.module.css";
-
-interface Pizza {
-  id: number;
-  name: string;
-  description: string;
-  price: number;
-}
 
 interface Props {
   pizza: Pizza;
 }
 
-const Pizza: React.FC<Props> = ({ pizza }: Props) => {
-  const dispatch = useStateDispatch();
-
+/*
+ * This is a functional component, so we can use the context hooks API.
+ */
+const PizzaItem: React.FC<Props> = ({ pizza }: Props) => {
+  const addToCart = useAddToCart();
   const handleAddToCartClick = () => {
-    dispatch({
-      type: "ADD_TO_CART",
-      payload: {
-        // item: { id: pizza.id, name: pizza.name, price: pizza.price}
-        item: pizza,
-      },
-    });
+    // addToCart({ id: pizza.id, name: pizza.name, price: pizza.price})
+    addToCart(pizza);
   };
 
   return (
@@ -42,4 +33,4 @@ const Pizza: React.FC<Props> = ({ pizza }: Props) => {
   );
 };
 
-export default Pizza;
+export default PizzaItem;
