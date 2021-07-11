@@ -16,6 +16,8 @@ Then, I proceeded in creating functional as well as class based components coupl
 
 Next, i added React context and the useState hook and then went further to replace setState with useReducer
 
+I proceeded by making use of localstorage to store some data and then call it in the useEffect hook.
+
 
 
 ## Live Demo 

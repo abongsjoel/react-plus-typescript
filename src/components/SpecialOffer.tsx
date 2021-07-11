@@ -1,18 +1,14 @@
 import React from "react";
-
-import { useStateDispatch } from "./AppState";
 import { Pizza } from "../types";
+import { useStateDispatch } from "./AppState";
 
-import PizzaCSS from "./Pizza.module.css";
+import SpecialOfferCSS from "./SpecialOffer.module.css";
 
 interface Props {
   pizza: Pizza;
 }
 
-/*
- * This is a functional component, so we can use the context hooks API.
- */
-const PizzaItem: React.FC<Props> = ({ pizza }: Props) => {
+const SpecialOffer: React.FC<Props> = ({ pizza }) => {
   const dispatch = useStateDispatch();
 
   const handleAddToCartClick = () => {
@@ -26,7 +22,7 @@ const PizzaItem: React.FC<Props> = ({ pizza }: Props) => {
   };
 
   return (
-    <li className={PizzaCSS.container}>
+    <div className={SpecialOfferCSS.container}>
       <h2>{pizza.name}</h2>
       <p>{pizza.description}</p>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -35,8 +31,8 @@ const PizzaItem: React.FC<Props> = ({ pizza }: Props) => {
           Add to Cart
         </button>
       </div>
-    </li>
+    </div>
   );
 };
 
-export default PizzaItem;
+export default SpecialOffer;
