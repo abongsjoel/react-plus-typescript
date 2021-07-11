@@ -20,6 +20,8 @@ I proceeded by making use of localstorage to store some data and then call it in
 
 Next, i created a Higher Order Component (HOC) for sharing the state, and then a Render Props component as well as a Custom Hook.
 
+I also made use of the React Ref API to handle DOM events using the original DOM API.
+
 
 
 ## Live Demo 
