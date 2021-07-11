@@ -18,7 +18,7 @@ Next, i added React context and the useState hook and then went further to repla
 
 I proceeded by making use of localstorage to store some data and then call it in the useEffect hook.
 
-Next, i created a Higher Order Component (HOC) for sharing the state.
+Next, i created a Higher Order Component (HOC) for sharing the state, and then a Render Props component as well as a Custom Hook.
 
 
 

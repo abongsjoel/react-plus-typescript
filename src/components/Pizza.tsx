@@ -1,18 +1,19 @@
 import React from "react";
 
 import { Pizza } from "../types";
+import { useAddToCart } from "./AddToCart";
 
 import PizzaCSS from "./Pizza.module.css";
-import { AddToCartProps, withAddToCart } from "./AddToCart";
 
-interface Props extends AddToCartProps {
+interface Props {
   pizza: Pizza;
 }
 
 /*
  * This is a functional component, so we can use the context hooks API.
  */
-const PizzaItem: React.FC<Props> = ({ pizza, addToCart }: Props) => {
+const PizzaItem: React.FC<Props> = ({ pizza }: Props) => {
+  const addToCart = useAddToCart();
   const handleAddToCartClick = () => {
     // addToCart({ id: pizza.id, name: pizza.name, price: pizza.price})
     addToCart(pizza);
@@ -32,4 +33,4 @@ const PizzaItem: React.FC<Props> = ({ pizza, addToCart }: Props) => {
   );
 };
 
-export default withAddToCart(PizzaItem);
+export default PizzaItem;
