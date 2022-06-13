@@ -21,6 +21,17 @@ Next, i created a Higher Order Component (HOC) for sharing the state, and then a
 
 I also made use of the React Ref API to handle DOM events using the original DOM API.
 
+<!--
+## Live Demo
+
+- [Visit Page]() -->
+
+## Built With
+
+- Typescript
+- React
+- Redux
+
 ## Running the Application
 
 To run this application locally, after clonning it, run
@@ -32,17 +43,6 @@ npm i
 ```
 npm run start
 ```
-
-<!--
-## Live Demo
-
-- [Visit Page]() -->
-
-## Built With
-
-- Typescript
-- React
-- Redux
 
 ## Author
 
