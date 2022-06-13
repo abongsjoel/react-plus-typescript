@@ -1,4 +1,3 @@
-
 # Delicious Pizza (React Plus Typescript)
 
 > A simple application built while extending my knowledge on Typescript with React. I build a simple pizza ordering process.
@@ -22,17 +21,28 @@ Next, i created a Higher Order Component (HOC) for sharing the state, and then a
 
 I also made use of the React Ref API to handle DOM events using the original DOM API.
 
+## Running the Application
 
-<!-- 
-## Live Demo 
+To run this application locally, after clonning it, run
+
+```
+npm i
+```
+
+```
+npm run start
+```
+
+<!--
+## Live Demo
 
 - [Visit Page]() -->
 
 ## Built With
+
 - Typescript
 - React
 - Redux
-
 
 ## Author
 
@@ -41,7 +51,6 @@ I also made use of the React Ref API to handle DOM events using the original DOM
 - GitHub: [@abongsjoel](https://github.com/abongsjoel)
 - Twitter: [@thierryjoel10](https://twitter.com/ThierryJoel10)
 - LinkedIn: [Chi Abongwa Joel](https://www.linkedin.com/in/chi-abongwa-joel-b4285a97/)
-
 
 ## Acknowledgments
 
