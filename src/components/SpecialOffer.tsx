@@ -1,6 +1,6 @@
 import React from "react";
 import { Pizza } from "../types";
-import { AddToCartProps, WithAddToCartProps } from "./AddToCart";
+import { WithAddToCartProps } from "./AddToCart";
 
 import SpecialOfferCSS from "./SpecialOffer.module.css";
 
