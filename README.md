@@ -1,6 +1,6 @@
 # Delicious Pizza (React Plus Typescript)
 
-> A simple application built while extending my knowledge on Typescript with React. I build a simple pizza ordering process.
+> A simple application built while extending my knowledge on Typescript with React. It implements a simple pizza ordering process.
 
 ![screenshot](../dev/screenshot.png)
 
